@@ -81,30 +81,7 @@ if __name__=="__main__":
          kmeans_algorithm(kmeans, pd_temp_weekend_in, pd_temp_weekend_in_raw, 'Data_weekend_in')
          kmeans_algorithm(kmeans, pd_temp_weekend_out, pd_temp_weekend_out_raw, 'Data_weekend_out')
          
-         # kmeans.fit(pd_temp_weekday_in.transpose())
-         # for num_cluster in range(num_clusters):
-         #     fig = plt.figure()
-         #     fig = plt.plot(pd_temp_weekday_in.to_numpy()[:, np.where(kmeans.labels_ == num_cluster)][:, 0, :])
-         #     plt.title('Cluster #%s' %num_cluster)
-         
-         pd_train_PV.append(obj_temp)
-    # Num_station_per_month = [len(x['Data']['PT_CODE'].unique()) for x in pd_train_PV]
-    # station_name_per_month = [x['Data']['PT_CODE'].unique() for x in pd_train_PV]
-    # station_names = get_union_sets_np(station_name_per_month)
-    
-    # for idx, month in enumerate(monthes):
-    #     pd_month = pd_train_PV[idx]
-    #     for station_name in station_names:
-    #         bool_selected_station = pd_month['Data']['PT_CODE'] == station_name
-    #         pd_temp = pd_month['Data'][bool_selected_station]
-    #         PV_day = []
-    #         for day_type in day_types:
-    #             bool_selected_day_type = pd_temp['DAY_TYPE'] == day_type
-    #             pd_temp_selected_daytype = pd_temp[bool_selected_day_type]
-    #             for time in time_period:
-    #                 print(pd_temp_selected_daytype[pd_temp_selected_daytype['TIME_PER_HOUR'] == time])
-                    
-                    
+         pd_train_PV.append(obj_temp)       
     
     
     
